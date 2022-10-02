@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/todo_detail.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/icon.png')}}" type="image/x-icon">
+</head>
+<body>
+    <section class="main">
+        <div class="info" id="info">
+            <h2 class="title">
+                Название: <span class="title_text">{{title}}</span>
+            </h2>
+            <br>
+            <h3 class="description">
+                Описание: <span class="description_text">{{description}}</span>
+            </h3> 
+        </div>
+        <div class="change_info" id="change_info">
+            <form action="{{url_for('update_task')}}" method="POST">
+                <h2 class="title">
+                    Название: <span><input type="text" name="title" value="{{title}}"></span>
+                </h2>
+                <br>
+                <h3 class="description">
+                    Описание: <br>
+                    <textarea type="text" name="description" maxlength='950'>{{description}}</textarea>
+                </h3>
+                <input type="hidden" name="id_task" value="{{id_task}}">
+                <input type="submit" value="Подтвердить" class="submit">
+            </form>
+        </div>
+
+        <button id="change" class="change" onclick="change_task()">Редактировать</button>
+        <button id="cancel_change" class="cancel_change" onclick="cancel_change_task()">Отменить</button>
+        <a class="link_back" href="{{url_for('home',id_user=id_user, login_user=login_user)}}">Вернуться</a>
+    </section>
+    <script src="{{ url_for('static',filename='js/todo_detail.js')}}"></script>
+</body>
+</html>

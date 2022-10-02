@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(45deg, #108cc5,#00c4cd,#4dee74);
+    background: linear-gradient(45deg, #108cc5,#00c4cd,#4dee74);
+}
+
+input {outline:none;}
+a {
+    text-decoration: none;
+    color: black;
+}
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 320px;
+    height: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 0px;
+}
+.login h2 {
+    margin-top: 30px;
+}
+.login form {
+    margin-top: 60px;
+    
+    text-align: center;
+}
+.login input {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 0px;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(122,122,122,0.5);
+}
+.login .submit{
+
+    background-color: #00c4cd;
+    color: white;
+}
+.login .go_to_auth {
+    color: black;
+    margin-top: 20px;
+}
+
+.auth {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 320px;
+    height: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 0px;
+}
+.auth h2 {
+    margin-top: 30px;
+}
+.auth form {
+    margin-top: 60px;
+    
+    text-align: center;
+}
+.auth input {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 0px;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(122,122,122,0.5);
+}
+.auth .submit{
+
+    background-color: #00c4cd;
+    color: white;
+}
+.auth .go_to_auth {
+    color: black;
+    margin-top: 20px;
+}
